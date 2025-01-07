@@ -10,7 +10,7 @@ function App() {
   useEffect(() => {
     const savedTasks = localStorage.getItem('tasks');
     if (savedTasks) {
-      setTasks(JSON.parse(savedTasks));  // Se houver tarefas no localStorage, use-as
+      setTasks(JSON.parse(savedTasks));  
     }
   }, []);
 
